@@ -1,0 +1,238 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div id="home" class="banner-area section-padding">
+        <div class="bg-overlay black"></div>
+        <div class="containter">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="welcome-text">
+                        <div class="name-area wow fadeInDown" data-wow-delay="0.2s">Hello, my name is Rushikesh Korde</div>
+                        <h1 class="wow fadeInDown" data-wow-delay="0.4s">Computer Science Engineer</h1>
+                        <a href="#about" class="my-btn-1 wow fadeInDown" data-wow-delay="0.6s">Learn more</a>
+                        <a href="#contact" class="my-btn-2 wow fadeInDown" data-wow-delay="0.8s">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {#    About section#}
+
+    <div id="about" class="about-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sn-8 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="about-left">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="line"></div>
+                        <h4>Parallel Programmer | Web enthusiast | ICCSP Research Paper on Parallel Programming | Campus ambassador at Hackerearth</h4>
+                        <p>A parallel programming enthusiast and a Experienced Treasurer .Skilled in OpenMP, C,C++, Java, and HTML. Strong finance professional with a Bachelor of Technology focused in Computer Science from Walchand College of Engineering , Vishrambag. </p>
+                        <a href="static/images/rushi.jpeg" download>Download CV&nbsp;<i class="fa fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5 visible-md visible-lg wow fadeInDown" data-wow-delay="0.6s">
+                    <div class="profile">
+                        <img src="static/images/rushifinal.jpeg" width="500" height="600" alt="Profile image" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {#    Project Section#}
+    <div id="services" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center">
+                        <h2>Project</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-4 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <img src="static/images/asach.jpeg" alt="work image">
+                        </a>
+
+                        <div class="gallery-text">
+                            <h2>{{ work.title }}</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-14 col-xs-12 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <img src="static/images/project.png" alt="work image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="single-service wow fadeInDown" data-wow-delay="0.2s">
+                            <i class="icon icon-wallet"></i>
+                            <h2>Traffic Signs Classification</h2>
+                            <p>The project is developed using Keras and Deep Learning. A Convolutional Neural Network Model classifies the traffic signs into the classes. These classes define the type of the traffic signs</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="single-service wow fadeInDown" data-wow-delay="0.2s">
+                            <i class="icon icon-wallet"></i>
+                            <h2>PARALLEL IMAGE PROCESSING</h2>
+                            <p>A C language project using OpenMp API to parallelize the implementation. To reduce the time required to process the images and perform basic operations like Image Blurring, Edge Detection, Contrast Stretching, Negation on each cores simultaneously</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="single-service wow fadeInDown" data-wow-delay="0.2s">
+                            <i class="icon icon-wallet"></i>
+                            <h2>LIBRARY MANAGEMENT SYSTEM</h2>
+                            <p>Library Management System providing the facilities of a general library system. Developed using C language.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    {#    resume Section#}
+    <div id="portfolio" class="portfolio-area section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header">
+                        <h2>Resume</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <img src="static/images/asach.jpeg" alt="work image">
+                        </a>
+
+                        <div class="gallery-text">
+                            <h2>{{ work.title }}</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-14 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <img src="static/images/rushi.jpeg" alt="work image">
+                        </a>
+
+                        <div class="gallery-text">
+                            <h2>{{ work.title }}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {#    Blog Section#}
+    <div id="blog" class="portfolio-area section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12   ">
+                    <div class="section-header">
+                        <h2>Blog</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-4 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <img src="static/images/asach.jpeg" alt="work image">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-14 col-xs-12 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <img src="static/images/blog2.jpg" height="200" width="200" alt="work image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </br>
+            </div>
+            <div class="row">
+                <div class="col-md-19 col-sm-50 col-xs-20 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <p>" We travel to discover the hidden beauties We travel to get lost somewhere We travel to fall in love with the nature When we're destructed in love with humans We travel to learn a lot of things from nature We travel to unlearn the things which made us though We travel to get to know about the creations of nature When we don't know the purpose of our existence, to find the meaning of our life We travel..." -A Thought of Mind...</p>
+                            <p>" The moment came to leave the home and to leave the whole With the heavy steps and the feelings in my soul This is not just the distance which is about a day, It's about the emotions accounting a bay. All the memories buried deep inside I have to move leaving all reasons beside With the heavy heart again, I passed the gate Yes it's my decision and my fate. "-A Thought of Mind</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {#    Contact section#}
+    <div id="contact" class="contact-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 box-contact-form">
+
+                    <form id="contact-form" method="post" action="#">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group wow fadeInDown" data-wow-delay="0.2s">
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                               placeholder="Enter your full name *" required="required"
+                                               data-error="Fullname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group wow fadeInDown" data-wow-delay="0.4s">
+                                        <input id="form_email" type="email" name="email" class="form-control"
+                                               placeholder="Enter your email *" required="required"
+                                               data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group wow fadeInUp" data-wow-delay="0.6s">
+                                        <textarea id="form_message" name="message" class="form-control"
+                                                  placeholder="Your Message *" rows="4" required="required"
+                                                  data-error="Leave a message for me"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn btn-send" value="">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
